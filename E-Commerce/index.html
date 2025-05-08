@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Commerce Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    .navbar {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      height: 75px;
+    }
+
+    .dashboard-title {
+      font-weight: bold;
+      margin: 2rem 0 1rem;
+      text-align: center;
+      color: #333;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .search-box {
+      max-width: 200px;
+      margin: 100 auto;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .card-subtitle {
+      font-size: 0.9rem;
+      color: gray;
+    }
+
+    .stats-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="#">ShopMate</a>
+      <form class="d-flex ms-auto search-box" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Dashboard Title -->
+  <div class="container">
+    <h2 class="dashboard-title">E-Commerce Admin Dashboard</h2>
+  </div>
+
+  <!-- Dashboard Stats -->
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <div class="card-title text-primary">Total Orders</div>
+          <div class="stats-number text-primary">1,230</div>
+          <div class="card-subtitle">Orders This Month</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <div class="card-title text-success">Revenue</div>
+          <div class="stats-number text-success">$58,200</div>
+          <div class="card-subtitle">Monthly Revenue</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <div class="card-title text-warning">Active Users</div>
+          <div class="stats-number text-warning">4,112</div>
+          <div class="card-subtitle">Registered Customers</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Product Highlights -->
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsen-A0UiFDSA0jxA7GudikszUjyIMZoZH-g&s" class="card-img-top" alt="Smartphone" height="300px">
+          <div class="card-body text-center">
+            <h5 class="card-title">Smartphones</h5>
+            <p class="card-text">Explore latest collection of Android and iOS phones.</p>
+            <a href="#" class="btn btn-primary btn-sm">Manage Products</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/794064/pexels-photo-794064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="Fashion" height="300px">
+          <div class="card-body text-center">
+            <h5 class="card-title">Fashion & Apparel</h5>
+            <p class="card-text">T-shirts, jeans, dresses, and more for all seasons.</p>
+            <a href="#" class="btn btn-success btn-sm">View Inventory</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://t4.ftcdn.net/jpg/03/64/41/07/360_F_364410756_Ev3WoDfNyxO9c9n4tYIsU5YBQWAP3UF8.jpg" class="card-img-top" alt="Electronics" height="300px">
+          <div class="card-body text-center">
+            <h5 class="card-title">Electronics</h5>
+            <p class="card-text">From laptops to accessories – shop top electronics.</p>
+            <a href="#" class="btn btn-warning btn-sm">Go to Category</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

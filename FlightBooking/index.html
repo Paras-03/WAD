@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flight Booking Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f8fb;
+    }
+
+    .navbar {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .dashboard-title {
+      text-align: center;
+      font-weight: bold;
+      margin: 2rem 0 1rem;
+      color: #333;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .stats-number {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .card-title {
+      font-weight: bold;
+    }
+
+    .search-box {
+      max-width: 200px;
+      margin: 100 auto;
+    }
+
+    .flight-img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="#">FlyAway Admin</a>
+      <form class="d-flex ms-auto search-box" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-light" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Title -->
+  <div class="container">
+    <h2 class="dashboard-title">Flight Booking Management Dashboard</h2>
+  </div>
+
+  <!-- Dashboard Stats -->
+  <div class="container mb-4">
+    <div class="row g-4 text-center">
+
+      <div class="col-md-4">
+        <div class="card p-4">
+          <div class="card-title text-primary">Bookings Today</div>
+          <div class="stats-number text-primary">312</div>
+          <div class="text-muted">Total confirmed tickets</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4">
+          <div class="card-title text-success">Active Flights</div>
+          <div class="stats-number text-success">98</div>
+          <div class="text-muted">Running currently</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4">
+          <div class="card-title text-warning">Passengers</div>
+          <div class="stats-number text-warning">8,124</div>
+          <div class="text-muted">Traveling today</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Flights List -->
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://s7ap1.scene7.com/is/image/incredibleindia/red-fort-delhi1-attr-hero?qlt=82&ts=1727352314555" class="flight-img" alt="NYC to Delhi">
+          <div class="card-body">
+            <h5 class="card-title">New York → Delhi</h5>
+            <p class="card-text">Departs: 10:00 AM | Arrives: 10:30 PM</p>
+            <a href="#" class="btn btn-primary btn-sm">View Booking</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://airadvisor.com/Media/images/routes_main/16x9/1303c66a85f1db99179f56f36f2e71d4.webp" class="flight-img" alt="London to Dubai">
+          <div class="card-body">
+            <h5 class="card-title">London → Dubai</h5>
+            <p class="card-text">Departs: 01:45 PM | Arrives: 09:10 PM</p>
+            <a href="#" class="btn btn-success btn-sm">Manage Seats</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i.natgeofe.com/k/95d61645-a0c7-470f-b198-74a399dd5dfb/singapore-city_3x2.jpg" class="flight-img" alt="Sydney to Singapore">
+          <div class="card-body">
+            <h5 class="card-title">Sydney → Singapore</h5>
+            <p class="card-text">Departs: 06:30 AM | Arrives: 12:15 PM</p>
+            <a href="#" class="button btn btn-warning btn-sm">Track Flight</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://cdn.britannica.com/16/99616-050-72CD201A/Colosseum-Rome.jpg" class="flight-img" alt="Paris to Rome">
+          <div class="card-body">
+            <h5 class="card-title">Paris → Rome</h5>
+            <p class="card-text">Departs: 08:00 AM | Arrives: 10:20 AM</p>
+            <a href="#" class="btn btn-info btn-sm">Flight Info</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://img.klm.com.cn/images/media/65848EF5-2848-4EA7-BE113130180A0A55" class="flight-img" alt="Berlin to Madrid">
+          <div class="card-body">
+            <h5 class="card-title">Berlin → Madrid</h5>
+            <p class="card-text">Departs: 11:15 AM | Arrives: 02:30 PM</p>
+            <a href="#" class="btn btn-danger btn-sm">Delay Alert</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://static.independent.co.uk/2025/01/03/14/newFile-12.jpg" class="flight-img" alt="Mumbai to Bangkok">
+          <div class="card-body">
+            <h5 class="card-title">Mumbai → Bangkok</h5>
+            <p class="card-text">Departs: 09:00 PM | Arrives: 04:30 AM</p>
+            <a href="#" class="btn btn-secondary btn-sm">Boarding Pass</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
