@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MediCity Emergency Portal</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f9ff;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #00509e;
+    }
+
+    .navbar-brand, .nav-link, .navbar-nav .nav-link.active {
+      color: white !important;
+    }
+
+    header {
+      background: url('https://c8.alamy.com/comp/TRWNBY/female-african-american-doctor-or-nurse-with-her-caucasian-colleague-behind-her-wearing-scrubs-and-stethoscopes-in-hospital-panoramic-web-banner-mixe-TRWNBY.jpg') center/cover no-repeat;
+      color: black;
+      padding: 5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-weight: bold;
+    }
+
+    .service-card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .service-card:hover {
+      transform: scale(1.02);
+    }
+
+    #contact-section {
+      display: none;
+      margin-top: 2rem;
+      padding: 2rem;
+      background-color: #e3f2fd;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #003566;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    .btn-contact {
+      margin-top: 2rem;
+    }
+
+    .img {
+      width: 60px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">MediCity</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" onclick="showContact()">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>MediCity Emergency Services</h1>
+    <p class="lead">Your City’s Trusted 24/7 Medical Emergency Response Portal</p>
+  </header>
+
+  <!-- Services -->
+  <div class="container py-5">
+    <h3 class="text-center mb-4">Our Emergency Services</h3>
+    <div class="row g-4 text-center">
+
+      <div class="col-md-4">
+        <div class="card service-card p-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_hifkEeP03fb1y1owCxUWh36NKiGsIbMtuA&s" class="img" alt="Ambulance">
+          <h5>Ambulance Services</h5>
+          <p>Quick response ambulance support across the city 24/7.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card service-card p-4">
+          <img src="https://blog.mentoria.com/wp-content/uploads/2023/01/er1.jpg" class="img" alt="Doctor">
+          <h5>Emergency Doctors</h5>
+          <p>Certified doctors available for critical on-spot medical help.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card service-card p-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxZ3f0NBUkIeDznoaKw4LGbKmWnnrUtwELSQ&s" class="img" alt="Emergency Care">
+          <h5>Cardiac Support</h5>
+          <p>Specialized cardiac equipment and care team for emergencies.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact Button -->
+    <div class="text-center">
+      <button class="btn btn-primary btn-contact" onclick="showContact()">Contact Us</button>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact-section">
+      <h4>Contact Emergency Response Team</h4>
+      <p><strong>Phone:</strong> +91-xxxxxxxx</p>
+      <p><strong>Email:</strong> emergency@medicity.com</p>
+      <p><strong>Address:</strong> 24x7 Emergency Response Center, Pune, MH</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 MediCity Emergency Portal. All Rights Reserved.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript for Contact Toggle -->
+  <script>
+    function showContact() {
+      document.getElementById("contact-section").style.display = "block";
+      document.getElementById("contact-section").scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

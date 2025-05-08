@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Waterfalls of India</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f4f8;
+    }
+    .navbar {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .hero {
+      background-color: rgb(219, 250, 239);
+      color: black;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    .how-to-reach {
+      display: none;
+    }
+    .footer {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="#">Waterfalls of India</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Explore India's Stunning Waterfalls</h1>
+    <p class="lead">From the misty Western Ghats to the lush Northeast</p>
+  </div>
+
+  <!-- Waterfalls Section -->
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <!-- Waterfall 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://we-dpms.com/treks-trails/wp-content/uploads/2019/08/WM-Kedarkantha-trek-001.jpg" class="card-img-top" alt="Dudhsagar Falls">
+          <div class="card-body">
+            <h5 class="card-title">Dudhsagar Falls, Goa</h5>
+            <button class="btn btn-primary" onclick="toggleReach('reach1')">How to Reach</button>
+            <p id="reach1" class="mt-3 how-to-reach">Take a train to Kulem station and trek or hire a jeep to the falls through Bhagwan Mahaveer Sanctuary.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Waterfall 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://s3.india.com/travel/wp-content/uploads/2017/06/Jog-Falls.jpg" class="card-img-top" alt="Jog Falls">
+          <div class="card-body">
+            <h5 class="card-title">Jog Falls, Karnataka</h5>
+            <button class="btn btn-primary" onclick="toggleReach('reach2')">How to Reach</button>
+            <p id="reach2" class="mt-3 how-to-reach">Reach via Sagara or Shimoga, then drive or take a bus to the viewpoint of Jog Falls.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Waterfall 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://res.cloudinary.com/kmadmin/image/upload/v1618830536/kiomoi/Cherrapunji_Nohkalikai_Waterfalls_1618830535578.jpg" class="card-img-top" alt="Nohkalikai Falls">
+          <div class="card-body">
+            <h5 class="card-title">Nohkalikai Falls, Meghalaya</h5>
+            <button class="btn btn-primary" onclick="toggleReach('reach3')">How to Reach</button>
+            <p id="reach3" class="mt-3 how-to-reach">From Shillong, drive 54 km to Cherrapunji and follow signs to the viewpoint.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Waterfalls of India. All rights reserved.</p>
+  </div>
+
+  <!-- Bootstrap JS + Custom Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleReach(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
