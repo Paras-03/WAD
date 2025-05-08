@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Portal Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    .navbar {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .dashboard-title {
+      margin: 2rem 0;
+      font-weight: bold;
+      text-align: center;
+      color: #333;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .search-box {
+      max-width: 400px;
+      margin: 1.5rem auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="#">College Portal</a>
+      <form class="d-flex ms-auto search-box" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-light" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Dashboard Title -->
+  <div class="container">
+    <h2 class="dashboard-title">Welcome to Your Dashboard</h2>
+  </div>
+
+  <!-- Dashboard Cards -->
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <h3 class="card-title text-primary">My Profile</h3>
+          <p class="card-text">View and update your personal and academic details.</p>
+          <a href="#" class="btn btn-primary btn-sm">View Profile</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <h3 class="card-title text-success">Courses</h3>
+          <p class="card-text">Access course materials, assignments and attendance.</p>
+          <a href="#" class="btn btn-success btn-sm">Go to Courses</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <h3 class="card-title text-danger">Notices</h3>
+          <p class="card-text">Stay updated with the latest announcements and notices.</p>
+          <a href="#" class="btn btn-danger btn-sm">View Notices</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <h3 class="card-title text-warning">Results</h3>
+          <p class="card-text">Check your semester results and academic progress.</p>
+          <a href="#" class="btn btn-warning btn-sm">Check Results</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <h3 class="card-title text-info">Library</h3>
+          <p class="card-text">Search for books, journals and manage your library account.</p>
+          <a href="#" class="btn btn-info btn-sm">Visit Library</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-4 text-center">
+          <h3 class="card-title text-secondary">Academic Calendar</h3>
+          <p class="card-text">View important academic dates and exam schedules.</p>
+          <a href="#" class="btn btn-secondary btn-sm">View Calendar</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
