@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Ticket Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Movie Ticket</h1>
+    <form action="/book" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" name="name" required>
+
+      <label for="movie">Select Movie:</label>
+      <select name="movie" required>
+        <option value="Interstellar">Interstellar</option>
+        <option value="Inception">Inception</option>
+        <option value="Oppenheimer">Oppenheimer</option>
+      </select>
+
+      <label for="seats">No. of Seats:</label>
+      <input type="number" name="seats" min="1" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</body>
+</html>

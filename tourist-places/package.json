@@ -1,0 +1,12 @@
+{
+    "name": "tourist-places",
+    "description": "5 Tourist places in India",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.10.0"
+    }
+}

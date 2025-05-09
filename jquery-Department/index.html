@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Department Info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery & jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .ui-grid-d .ui-block-a,
+    .ui-grid-d .ui-block-b,
+    .ui-grid-d .ui-block-c,
+    .ui-grid-d .ui-block-d,
+    .ui-grid-d .ui-block-e {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .ui-btn {
+      background-color: #007bff !important;
+      color: white !important;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>Departments</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <div class="ui-grid-d">
+      <div class="ui-block-a"><a href="#cse" class="ui-btn">CSE</a></div>
+      <div class="ui-block-b"><a href="#it" class="ui-btn">IT</a></div>
+      <div class="ui-block-c"><a href="#entc" class="ui-btn">ENTC</a></div>
+      <div class="ui-block-d"><a href="#mech" class="ui-btn">Mechanical</a></div>
+      <div class="ui-block-e"><a href="#civil" class="ui-btn">Civil</a></div>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>&copy; 2025 College Portal</h4>
+  </div>
+</div>
+
+<!-- CSE Department -->
+<div data-role="page" id="cse">
+  <div data-role="header"><a href="#home" data-icon="back">Back</a><h1>CSE Department</h1></div>
+  <div class="ui-content">
+    <h2>Computer Science Engineering</h2>
+    <p>Focuses on algorithms, data structures, AI, ML, and systems programming.</p>
+  </div>
+</div>
+
+<!-- IT Department -->
+<div data-role="page" id="it">
+  <div data-role="header"><a href="#home" data-icon="back">Back</a><h1>IT Department</h1></div>
+  <div class="ui-content">
+    <h2>Information Technology</h2>
+    <p>Deals with software development, networking, and data management.</p>
+  </div>
+</div>
+
+<!-- ENTC Department -->
+<div data-role="page" id="entc">
+  <div data-role="header"><a href="#home" data-icon="back">Back</a><h1>ENTC Department</h1></div>
+  <div class="ui-content">
+    <h2>Electronics and Telecommunication</h2>
+    <p>Covers communication systems, circuits, embedded systems.</p>
+  </div>
+</div>
+
+<!-- Mechanical Department -->
+<div data-role="page" id="mech">
+  <div data-role="header"><a href="#home" data-icon="back">Back</a><h1>Mechanical Department</h1></div>
+  <div class="ui-content">
+    <h2>Mechanical Engineering</h2>
+    <p>Focuses on design, manufacturing, and thermal systems.</p>
+  </div>
+</div>
+
+<!-- Civil Department -->
+<div data-role="page" id="civil">
+  <div data-role="header"><a href="#home" data-icon="back">Back</a><h1>Civil Department</h1></div>
+  <div class="ui-content">
+    <h2>Civil Engineering</h2>
+    <p>Specializes in construction, infrastructure, and environmental design.</p>
+  </div>
+</div>
+
+</body>
+</html>
